@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "a:\\jdk-11\\gson-2.8.9.jar",
+        "a:\\Dowload\\singleton-ops_2.11-0.5.2.jar"
+    ]
+}
