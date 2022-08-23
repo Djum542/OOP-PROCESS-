@@ -15,4 +15,7 @@ private static class SingletonHelper{
         return SingletonHelper.intance;
     }
 }
+public static Serialization getInstance() {
+    return null;
+}
 }

@@ -7,6 +7,7 @@ import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
+import java.io.InputStream;
  
 
 
@@ -23,7 +24,7 @@ public class SingletonSerialized {
         out.close();
  
         // De-serialize from file to object
-        ObjectInput in = new ObjectInputStream(new InputStream("SingletonSerializedTest.txt"));
+        ObjectInput in = new ObjectInputStream(new FileInputStream("EnumSingleton"));
         Serialization serializedSingleton2 = (Serialization) in.readObject();
         EnumSingleton enumSingleton2 = (EnumSingleton) in.readObject();
         in.close();
