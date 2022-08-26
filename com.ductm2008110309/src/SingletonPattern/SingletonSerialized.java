@@ -15,7 +15,7 @@ import java.io.InputStream;
 public class SingletonSerialized {
     public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
  
-        Serialization serializedSingleton1 = Serialization.getInstance();
+        Serialization serializedSingleton1 = Serialization.getIntance();
         EnumSingleton enumSingleton1 = EnumSingleton.intance;
  
         ObjectOutput out = new ObjectOutputStream(new FileOutputStream("SingletonSerializedTest.txt"));
